@@ -56,8 +56,9 @@ app.post("/login", async(req, res)=>{
   )
   
    
-  res.json({
-    message: "Login realizado com sucesso!",
+  res.status(200).redirect("/")
+  console.log({
+    message: "Login efetuado com sucesso!",
     user
   })
 })
